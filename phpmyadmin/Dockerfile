@@ -9,19 +9,19 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.4.13-r0 \
-        nginx=1.18.0-r0 \
-        php7-curl=7.3.21-r0 \
-        php7-fpm=7.3.21-r0 \
-        php7-gd=7.3.21-r0 \
-        php7-iconv=7.3.21-r0 \
-        php7-json=7.3.21-r0 \
-        php7-mbstring=7.3.21-r0 \
-        php7-mysqli=7.3.21-r0 \
-        php7-opcache=7.3.21-r0 \
-        php7-session=7.3.21-r0 \
-        php7-zip=7.3.21-r0 \
-        php7=7.3.21-r0 \
+        mariadb-client \
+        nginx \
+        php7-curl \
+        php7-fpm \
+        php7-gd\
+        php7-iconv \
+        php7-json \
+        php7-mbstring \
+        php7-mysqli \
+        php7-opcache \
+        php7-session \
+        php7-zip \
+        php7 \
     \
     && mkdir /var/www/phpmyadmin \
     && curl -L -s \
